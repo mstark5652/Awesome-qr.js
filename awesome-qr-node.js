@@ -33,8 +33,9 @@
 let fs = require('fs');
 let http = require('http');
 let url = require('url');
-let Canvas = require('canvas-prebuilt');
-let Image = Canvas.Image;
+let _canvas = require('canvas');
+let Canvas = _canvas.createCanvas;
+let Image = _canvas.Image;
 let request = require('request');
 
 var AwesomeQRCode;
